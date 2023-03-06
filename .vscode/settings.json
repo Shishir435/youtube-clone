@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "javascript.format.semicolons": "ignore",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}

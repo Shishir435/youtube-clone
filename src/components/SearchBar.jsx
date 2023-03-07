@@ -18,14 +18,21 @@ function SearchBar() {
       component="form"
       onSubmit={handleSubmit}
       sx={{
+        overflow: 'scroll',
+        display: {xs: 'flex', sm: 'flex',md:'flex'},
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         borderRadius: 20,
         border: "1px solid #e3e3e3",
-        pl: 2,
+        pl: '2px',
         boxShadow: "none",
-        mr: { sm: 5 },
+        mr: { xs: '5px',sm: '5px' },
+        ml: {xs: '5px',sm: '5px'}
       }}
-    >
+    > 
+      
       <input
+        
         className="search-bar"
         placeholder="Search.."
         value={searchTerm}
@@ -36,8 +43,9 @@ function SearchBar() {
         sx={{ p: "10px", color: "red" }}
         aria-label="search"
       >
-        <Search />
+      <Search />
       </IconButton>
+    
     </Paper>
   );
 }

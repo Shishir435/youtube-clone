@@ -11,7 +11,8 @@ function SideBar({selectedCategory, setSelectedCategory}) {
       sx={{
         overflow: 'scroll',
         height: { sx: "auto", md: "95%" },
-        flexDirection: { md: "column" },
+        flexDirection: {  md: "column" },
+        // width: 'fit-content'
       }}
     >
       {categories.map((category) => (
@@ -25,6 +26,7 @@ function SideBar({selectedCategory, setSelectedCategory}) {
           }}
           key={category.name}
         >
+          <div  style={{display: 'flex', width: 'max-content', alignItems: 'center'}}>
           <span
             style={{
               color: category.name === selectedCategory ? "white" : "red",
@@ -39,7 +41,7 @@ function SideBar({selectedCategory, setSelectedCategory}) {
             }}
           >
             {category.name}
-          </span>
+          </span></div>
         </button>
       ))}
     </Stack>

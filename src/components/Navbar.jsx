@@ -16,7 +16,7 @@ const Navbar = () => {
       }}
     >
       <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-        <img src={logo} alt="logo" height={45} />
+        <img src={logo} alt="logo" height={45} /> <span style={{color: "white", fontSize: "45px", marginLeft: '5px'}}>Clone</span>
       </Link>
       <SearchBar />
     </Stack>

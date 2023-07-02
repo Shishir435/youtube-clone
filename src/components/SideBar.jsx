@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import { categories } from "../utils/contstant";
+import { categories } from "../utils/constant";
 
 function SideBar({selectedCategory, setSelectedCategory}) {
 
@@ -21,7 +21,7 @@ function SideBar({selectedCategory, setSelectedCategory}) {
           onClick={() => setSelectedCategory(category.name)}
           style={{
            
-            background: category.name === selectedCategory && "#fc1503",
+            background: category.name === selectedCategory && "#272727",
             color: "white",
           }}
           key={category.name}

@@ -13,20 +13,19 @@ const SearchFeed = () => {
     );
   }, [searchTerm]);
   return (
-    <Box p={2} minHeight="95vh">
+    <Box p={2} sx={{margin:" 0 auto" }} minHeight="95vh">
       <Typography
         variant="h4"
         fontWeight="bold"
-        sx={{ color: "white" }}
+        sx={{ color: "white", textAlign: "center" }}
         mb={3}
-        ml={{ sm: "100px" }}
       >
         Search Results for:{" "}
         <span style={{ color: "#F31503" }}>{searchTerm}</span>
       </Typography>
-      <Box display="flex">
-        <Box sx={{ mr: { sm: "100px" } }} />
-        {<Videos videos={videos} />}
+      <Box sx={{display: "grid", gridColumn: {xs: "1", sm:" 2", md: "3", lg: "4", xl: "5" } }}>
+        {/* <Box sx={{ mr: { sm: "100px" } }} /> */}
+        {<Videos  videos={videos} />}
       </Box>
     </Box>
   );

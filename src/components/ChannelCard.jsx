@@ -2,7 +2,7 @@ import { Box, CardContent, CardMedia, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
-import { demoProfilePicture } from "../utils/contstant";
+import { demoProfilePicture } from "../utils/constant";
 
 const ChannelCard = ({ channelDetail, marginTop }) => {
   return (
@@ -13,8 +13,8 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: {xs: '356px', md: '320px'},
-        height: '326px',
+        width: {xs: "95vw", sm: "45vw", md: "34vw",lg: "300px", xl: "310px"},
+        
         margin: 'auto',
         marginTop,
       }}
@@ -37,9 +37,10 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             alt={channelDetail?.snippet?.title}
             sx={{
               borderRadius: "50%",
-              height: "180px",
-              width: "180px",
-              mb: 2,
+              height: "150px",
+              width: "150px",
+              margin:" 0 auto",
+              marginBottom: "8px",
               border: "1px solid #e3e3e3",
             }}
           />

@@ -18,13 +18,17 @@ function SearchBar() {
       component="form"
       onSubmit={handleSubmit}
       sx={{
-        overflow: 'scroll',
-        display: {xs: 'flex', sm: 'flex',md:'flex'},
+        overflow: 'hidden',
+        width: "40%",
+        minWidth: "120px",
+        display: {xs: 'flex'},
         flexDirection: 'row',
+        alignItems: "center",
         justifyContent: 'space-between',
-        borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        borderRadius: "9999px",
+        border: "1.2px solid gray",
         pl: '2px',
+        height: "33px",
         boxShadow: "none",
         mr: { xs: '5px',sm: '5px' },
         ml: {xs: '5px',sm: '5px'}
@@ -40,12 +44,12 @@ function SearchBar() {
       />
       <IconButton
         type="submit"
-        sx={{ p: "10px", color: "red" }}
+        sx={{  transform: "translate(2px) translateZ(10px)", backgroundColor: "gray", color: "red" }}
         aria-label="search"
       >
       <Search />
       </IconButton>
-    
+      
     </Paper>
   );
 }

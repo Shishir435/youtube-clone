@@ -3,10 +3,12 @@ import { VideoCard, ChannelCard, Loader } from "./";
 import React from "react";
 
 function Videos({ videos, direction }) {
+
   if (!videos?.length) return <Loader />;
   return (
     <Stack
       direction={direction || "row"}
+      display="flex"
       flexWrap="wrap"
       justifyContent="start"
       alignItems='start'
